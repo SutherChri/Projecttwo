@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  body {
+    
+    border: solid black 8px;
+  }
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  width: 90%;
+  
+}
+
+.center2 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  margin-bottom: 100px;
+  width: 70%;
+}
+
+.center3 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+  width: 80%;
+}
+
+    h1{
+    text-align: center;
+    margin-top: 10;
+    padding-top: 30px;
+    padding-top: 2px;
+    color: white;
+  }
+
+  p{
+
+    text-align: center;
+    font-size: 12px;
+    font-style: bold;
+  }
+}
+
+
+
+
+
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  body {
+    border: solid black 8px;
+  }
+
+  h1{
+    text-align: center;
+    margin-top: 10;
+    padding-top: 30px;
+    padding-top: 2px;
+    color: white;
+  }
+  p{
+    
+    text-align: center;
+    font-size: 13px;
+    font-style: bold;
+  }
+
+  .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
+.center2 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+  width: 50%;
+}
+
+.center3 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+  width: 50%;
+}
+
+
+
+}
+
+
+
+
+
+
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  body {
+    background-color: #c4e9ff; /* Blue */
+    border: solid black 10px;
+  }
+
+  h1{ 
+  padding-top: 25px;
+  text-align: center;
+  font-size: 5em;
+  color: white;
+  }
+
+  p{
+    text-align: center;
+    
+    font-size: 18px;
+    font-style: bold;
+  }
+
+    .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 75px;
+  width: 70%;
+
+}
+
+.center2 {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+
+}
+
+.center3 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 150px;
+  width: 25%;
+  
+}
+
+}
+
+/*some code sourced from https://internetingishard.com/html-and-css/responsive-design/*/
+
+
+body {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    background: #84b3ff;
+    
+}
+
+p{
+  margin-left: 15px;
+  margin-right: 15px;
+
+}
+
+
+
+
