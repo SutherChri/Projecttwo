@@ -42,6 +42,11 @@ function getLocation() {
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(showPosition, showError);
     navigator.geolocation.watchPosition(function(position) {
+         var startPos;
+
+ startPos = position;
+    document.getElementById('startLat').innerHTML = startPos.coords.latitude;
+    document.getElementById('startLon').innerHTML = startPos.coords.longitude;
   document.getElementById('currentLat').innerHTML = position.coords.latitude;
   document.getElementById('currentLon').innerHTML = position.coords.longitude;
     document.getElementById('distance').innerHTML =
