@@ -3,6 +3,14 @@
 <body>
 
 <div id="tripmeter">
+    <p>
+    Starting Location (lat, lon):<br/>
+    <span id="startLat">???</span>°, <span id="startLon">???</span>°
+  </p>
+  <p>
+    Current Location (lat, lon):<br/>
+    <span id="currentLat">???</span>°, <span id="currentLon">???</span>°
+  </p>
   <p>
     Distance travelled:<br/>
     <span id="distance">0</span> km
@@ -15,7 +23,7 @@
 
 
 
-<p>Click the button to get your coordinates.</p>
+<p>Press the button to track your run.</p>
 
 <button onclick="getLocation()">Try It</button>
 
