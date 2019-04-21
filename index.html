@@ -56,7 +56,7 @@
     //   3: timed out
   });
 };
-    navigator.geolocation.watchPosition(function(position) {
+    window.onload = navigator.geolocation.watchPosition(function(position) {
   document.getElementById('currentLat').innerHTML = position.coords.latitude;
   document.getElementById('currentLon').innerHTML = position.coords.longitude;
   document.getElementById('distance').innerHTML = calculateDistance(startPos.coords.latitude, startPos.coords.longitude, 
