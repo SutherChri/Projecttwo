@@ -37,7 +37,7 @@
 <script>
     window.onload = function() {
   var startPos;
-  navigator.geolocation.getCurrentPosition(function(position) {
+  navigator.geolocation.watchPosition(function(position) {
     startPos = position;
     document.getElementById('startLat').innerHTML = startPos.coords.latitude;
     document.getElementById('startLon').innerHTML = startPos.coords.longitude;
@@ -56,12 +56,13 @@
     //   3: timed out
   });
 };
-    window.onload = navigator.geolocation.watchPosition(function(position) {
+    navigator.geolocation.watchPosition(function(position) {
   document.getElementById('currentLat').innerHTML = position.coords.latitude;
   document.getElementById('currentLon').innerHTML = position.coords.longitude;
   document.getElementById('distance').innerHTML = calculateDistance(startPos.coords.latitude, startPos.coords.longitude, 
    position.coords.latitude, position.coords.longitude);
 });
+    
     function calculateDistance(lat1, lon1, lat2, lon2) {
   var R = 6371; // km
   var dLat = (lat2 - lat1).toRad();
