@@ -63,7 +63,7 @@
 <!-- <div class="startTimer reset" onclick="startTimer()" >
     <i class="fas fa-play"></i>
 </div> -->
-<div class="pauseTimer reset" onclick="pauseTimer()"Pause >
+<div class="pauseTimer reset" onclick="pauseTimer()">Pause
     <i class="fas fa-pause"></i>
 </div>
 <div class="resetTimer reset" onclick="resetTimer()">Reset</div>
@@ -146,12 +146,12 @@
       var hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
       var minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
       var seconds = Math.floor((difference % (1000 * 60)) / 1000);
-      var milliseconds = Math.floor((difference % (1000 * 60)) / 100);
+//       var milliseconds = Math.floor((difference % (1000 * 60)) / 100);
     hours = (hours < 10) ? "0" + hours : hours;
       minutes = (minutes < 10) ? "0" + minutes : minutes;
       seconds = (seconds < 10) ? "0" + seconds : seconds;
-      milliseconds = (milliseconds < 100) ? (milliseconds < 10) ? "00" + milliseconds : "0" + milliseconds : milliseconds;
-      timerDisplay.innerHTML = hours + ':' + minutes + ':' + seconds + ':' + milliseconds;
+//       milliseconds = (milliseconds < 100) ? (milliseconds < 10) ? "00" + milliseconds : "0" + milliseconds : milliseconds;
+      timerDisplay.innerHTML = hours + ':' + minutes + ':' + seconds;
     }
         </script>
         
